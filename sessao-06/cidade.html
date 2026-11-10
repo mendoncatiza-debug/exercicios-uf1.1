@@ -2,8 +2,17 @@
 <html lang="pt-PT">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Braga é uma das cidades mais antigas e fascinantes de Portugal, com mais de 2.000 anos de história.
+     Famosa pelo rico património romano, igrejas históricas e vibrante vida académica." /> 
+    <meta name="author" content="Tiza Mendonça"/>   
+    
+    
+
+
     <title>A minha cidade: Braga</title>
   </head>
+
   <body>
     <header>
       <img src="imagens/cidade.svg"
@@ -143,6 +152,7 @@
       </blockquote>
     </article>
     <section id="sugestoes">
+
       <!--Grupo 1:identificaco-->
       <h2>Partilhe uma sugestão sobre a cidade</h2>
       <p>Convidamos todos os visitantes a sugerirem novos pontos de interesse. </p>
@@ -155,7 +165,15 @@
          type="text" 
          name="name" 
          id="name"
-         placeholder="digite aqui o seu nome">
+         placeholder="digite aqui o seu nome"
+         required
+         minlength="3"
+         maxlength="60"
+         />
+         
+         
+
+        
         </p>
         <p>
         <label for="email-sugestoes">Email de contacto</label>
@@ -164,7 +182,9 @@
           id="email-sugestoes"
          name="email-sugestoes"
          placeholder="digite aqui o seu email"
-         required/>
+         required
+        
+         />
         </p>
       </fieldset>
       <!--Grupo 2:Detalhes da recomendação-->
@@ -207,6 +227,8 @@
            rows="5"
            cols="20"
            required
+           minlength="20"
+            maxlength="800"
            >
           </textarea>
 
@@ -220,7 +242,7 @@
             id="autorizacao"
             name="autorizacao"
             required>
-            <label for="autorizacao">Autorizaçao a publicacao das suas escolhas></label>
+            <label for="autorizacao">Autorizaçao a publicacao das suas escolhas</label>
           </div>
       <button type="submit">Enviar</button>
       <button type="reset">Para Limpar</button>
