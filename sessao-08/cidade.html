@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <title>A minha cidade: Braga</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+
+  </head>
+  <body>
+    <header>
+      <img src="imagens/cidade.svg"
+        alt="Cidade" 
+        width="240"
+        height="160"
+      />
+
+      <nav>
+        <ul> 
+          <li><a href="#onde-fica">Onde Fica</a></li>
+          <li><a href="#historia">História</a></li>
+          <li><a href="#visitar">Visitar</a></li>
+          <li><a href="#monumentos">Monumentos</a></li>
+          <li><a href="#ditado">Ditado</a></li>
+          <li><a href="#sugestoes">Sugestões</a></li>
+        </ul>
+      </nav> 
+
+      
+    </header>
+  <main>
+
+    <abbr title="A minha cidade">AMC</abbr>
+    <h1>Braga</h1>
+    
+    <p>A cidade onde nasci e onde ainda vivo.</p>
+
+
+
+    <!-- Onde fica -->
+     <section id="onde-fica">
+    <h2>Onde fica</h2>
+    <p>link para portal de Braga <a href="https://www.cm-braga.pt/pt" target="_blank" rel=" noreferrer noopener"> municipio de braga</a></p>
+    <p>Braga fica no norte de Portugal, no Minho, a uma hora do Porto.</p>
+  </section>
+
+    <!-- Pelo que é conhecida -->
+     <section id="historia">
+    <h2>Pelo que é conhecida</h2>
+    <p>
+      É uma das <strong>cidades mais antigas do país</strong>: foi fundada pelos
+      romanos.
+    </p>
+    <p>Tem tantas <span lang="en">churches</span> que lhe chamam a "cidade dos arcebispos".</p>
+
+  </section>
+
+    
+    <!-- O que visitar -->
+    <section id="visitar">
+    <h2>O que visitar</h2>
+    <ul>
+
+      <li><strong>Sé de Braga  </strong></li>
+      <li><strong>Palácio do Rario</strong> </li>
+      <li><strong> Arco da Porta Nova</strong> </li>
+      </ul>
+    </section>
+
+    <section id="monumentos">
+      <!--Monumentos-->
+      <h2>Monumentos</h2>
+      <h3>Sé Primacial de Braga </h3>
+      <p>
+      A catedral mais antiga de Portugal, apresentando uma mistura única de estilos românico, gótico e barroco
+      </p>
+      <h3>Arco da Porta Nova</h3>
+      <p>
+        Um dos marcos emblemáticos da cidade, também desenhado por André Soares, que se destaca por nunca ter tido portão.
+      </p>
+
+      <!-- Principais Monumentos-->
+       <h2> principais monumentos</h2>
+       <table border="1">
+        <caption>monumentos principais de Braga </caption>
+          <thead>
+            <tr>
+              <th scope="col">Monumento </th>
+              <th scope="col"> Construcao/Seculo</th>
+              <th scope="col"> Estilo</th>
+              <th scope="col"> classificacao</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Sé de Braga</th> 
+            <td>1070 to 1039 /século XI </td>
+            <td>mistura de estilos românico, gótico e barroco.</td>
+            <td> 0 a 10</td>
+          </tr>
+          <tr>
+           <th scope="row">Palácio do Rario</th>
+           <td>1754 to 1755/século XVIII </td>
+            <td>Estilo barroco joanino</td>
+            <td> 0 a 10</td>
+          </tr>
+          <tr>
+           <th scope="row">Arco da Porta Nova </th> 
+           <td> 1772 / Século XVIII</td>
+           <td> Barroco / Rococó </td>
+           <td>0 a 10 </td>
+
+          </tr>
+          <tr>
+             <th scope="row">Santuário do Bom Jesus do Monte </th> 
+             <td>1722/Séculos XVIII e XIX  </td>
+             <td> Barroco, Rococó e Neoclássico  </td>
+             <td>0 a 10 </td>
+
+          </tr>
+          </tbody>
+
+       </table>
+
+    </section>
+    <section id="ditado">
+      <h2>Ditado</h2>
+      <p>...</p>
+    </section>
+
+    <article>
+      <h3>Um ditado sobre Braga </h3>
+      <blockquote>
+      <p>
+        <em> Ver Braga por um canudo .</em>
+        </p>
+      </blockquote>
+    </article>
+
+    <article>
+      <h3>Outro ditado sobre Braga </h3>
+      <blockquote>
+      <p>
+        <em> Mais velho que a Sé de Braga .</em>
+        </p>
+      </blockquote>
+    </article>
+    <section id="sugestoes">
+      <!--Grupo 1:identificaco-->
+      <h2>Partilhe uma sugestão sobre a cidade</h2>
+      <p>Convidamos todos os visitantes a sugerirem novos pontos de interesse. </p>
+      <form action="#" method="post">
+      <fieldset>
+        <legend>A sua identificação </legend>
+        <p>
+        <label for="name">Nome completo </label>
+        <input
+         type="text" 
+         name="name" 
+         id="name"
+         placeholder="digite aqui o seu nome">
+        </p>
+        <p>
+        <label for="email-sugestoes">Email de contacto</label>
+        <input
+         type="email"
+          id="email-sugestoes"
+         name="email-sugestoes"
+         placeholder="digite aqui o seu email"
+         required/>
+        </p>
+      </fieldset>
+      <!--Grupo 2:Detalhes da recomendação-->
+      <fieldset>
+        <legend>Detalhes da recomendação</legend>
+        <p>
+         <label for="categoria">Categoria</label>
+         <select id="categoria" name="Categoria">
+         <option value="monumento">Monumento</option>
+         <option value="miradouro-natureza">Miradouro-Natureza</option>
+         <option value="restaurante-gastronomia">Restaurante-Gastronomia</option>
+         <option value="museu">Museu</option>
+         </select>
+        </p><br>
+        <div><p> Que tipo de visitante és? </p>
+          <input
+           type="radio"
+           id="telefone"
+           name="resposta"
+           value="Local"
+           checked
+           />
+           <label for="telefone">Local</label>
+           <input 
+           type="radio"
+           id="email"
+           name="resposta"
+           value="email"
+           />
+           <label for="email">Turista</label><br>
+          </div>
+          
+        
+        <p>
+          <label for="mensagem">Descreva o Local</label><br>
+          <textarea
+           id="mensagem"
+           name="mensagem"
+           placeholder="sua mensagem"
+           rows="5"
+           cols="20"
+           required
+           >
+          </textarea>
+
+        </p>
+      </fieldset>
+      <fieldset>
+          <legend> Autorizaçao para a publicacao</legend>
+          <div>
+            <input
+            type="checkbox"
+            id="autorizacao"
+            name="autorizacao"
+            required>
+            <label for="autorizacao">Autorizaçao a publicacao das suas escolhas></label>
+          </div>
+      <button type="submit">Enviar</button>
+      <button type="reset">Para Limpar</button>
+      </fieldset>
+  
+
+
+      </form>
+    </section>
+    
+  </main>
+  <footer id="final">
+    <!-- Rodapé -->
+    <hr />
+    &copy; 2026 TIZA MENDONÇA
+  </footer>
+  </body>
+</html>
